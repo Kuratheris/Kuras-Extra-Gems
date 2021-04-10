@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+      <defName>KGems</defName>
+      <label>gems</label>
+      <parent>ResourcesRaw</parent>
+      <iconPath>Rainbow</iconPath>
+    </ThingCategoryDef>
+
+</Defs>

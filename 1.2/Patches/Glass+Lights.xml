@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+	<value>
+  <StuffCategoryDef>
+    <defName>GemGlass</defName>
+    <label>gem Glass</label>
+  </StuffCategoryDef>
+	</value>
+    </match>
+	</Operation>
+
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Window"]/stuffCategories</xpath>
+	<value>
+			<li>GemGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="DoorGlass"]/stuffCategories</xpath>
+	<value>
+			<li>GemGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="AutoDoorGlass"]/stuffCategories</xpath>
+	<value>
+			<li>GemGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+
+			--Amethyst Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>AmethystGlass</defName>
+		<label>amethyst glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(88,54,114)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>amethyst Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(88,54,114)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeAmethystGlass</defName>
+		<label>make Amethyst Glass</label>
+		<description>Turn some amethyst into glass.</description>
+		<jobString>Making amethyst glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Amethyst</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AmethystGlass>4</AmethystGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Amethyst</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeAmethystGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Amber Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>AmberGlass</defName>
+		<label>amber glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(217,126,0)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>amber Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(217,126,0)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeAmberGlass</defName>
+		<label>make Amber Glass</label>
+		<description>Turn some amber into glass.</description>
+		<jobString>Making amber glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Amber</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AmberGlass>4</AmberGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Amber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeAmberGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Angelite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>AngeliteGlass</defName>
+		<label>angelite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(145,172,188)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>angelite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(145,172,188)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeAngeliteGlass</defName>
+		<label>make Angelite Glass</label>
+		<description>Turn some angelite into glass.</description>
+		<jobString>Making angelite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Angelite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AngeliteGlass>4</AngeliteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Angelite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeAmberGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Aquamarine Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>AquamarineGlass</defName>
+		<label>aquamarine glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(93,167,218)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>aquamarine glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(93,167,218)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeAquamarineGlass</defName>
+		<label>make Aquamarine Glass</label>
+		<description>Turn some aquamarine into glass.</description>
+		<jobString>Making aquamarine glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aquamarine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<AquamarineGlass>4</AquamarineGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Aquamarine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeAquamarineGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Benitoite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BenitoiteGlass</defName>
+		<label>benitoite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(37,53,131)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>benitoite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(37,53,131)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeBenitoiteGlass</defName>
+		<label>make Benitoite Glass</label>
+		<description>Turn some benitoite into glass.</description>
+		<jobString>Making benitoite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Benitoite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BenitoiteGlass>4</BenitoiteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Benitoite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeBenitoiteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Bixbite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>BixbiteGlass</defName>
+		<label>bixbite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(173,47,82)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>bixbite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(173,47,82)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeBixbiteGlass</defName>
+		<label>make Bixbite Glass</label>
+		<description>Turn some bixbite into glass.</description>
+		<jobString>Making bixbite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bixbite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BixbiteGlass>4</BixbiteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Bixbite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeBixbiteGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Chrysoprase Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>ChrysopraseGlass</defName>
+		<label>chrysoprase glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(100,200,162)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>chrysoprase Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(100,200,162)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeChrysopraseGlass</defName>
+		<label>make Chrysoprase Glass</label>
+		<description>Turn some chrysoprase into glass.</description>
+		<jobString>Making chrysoprase glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chrysoprase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<ChrysopraseGlass>4</ChrysopraseGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Chrysoprase</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeChrysopraseGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Dioptase Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>DioptaseGlass</defName>
+		<label>dioptase glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(33,129,118)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>dioptase Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(33,129,118)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeDioptaseGlass</defName>
+		<label>make Dioptase Glass</label>
+		<description>Turn some dioptase into glass.</description>
+		<jobString>Making dioptase glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Dioptase</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<DioptaseGlass>4</DioptaseGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Dioptase</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeDioptaseGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Ekanite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>EkaniteGlass</defName>
+		<label>ekanite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(84,103,15)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>ekanite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(84,103,15)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeEkaniteGlass</defName>
+		<label>make Ekanite Glass</label>
+		<description>Turn some ekanite into glass.</description>
+		<jobString>Making ekanite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ekanite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<EkaniteGlass>4</EkaniteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ekanite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeEkaniteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Emerald Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>EmeraldGlass</defName>
+		<label>emerald glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(43,135,26)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>emerald Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(43,135,26)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeEmeraldGlass</defName>
+		<label>make Emerald Glass</label>
+		<description>Turn some emerald into glass.</description>
+		<jobString>Making emerald glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Emerald</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<EmeraldGlass>4</EmeraldGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Emerald</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeEmeraldGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Garnet Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>GarnetGlass</defName>
+		<label>garnet glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(98,25,18)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>garnet Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(98,25,18)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeGarnetGlass</defName>
+		<label>make Garnet Glass</label>
+		<description>Turn some garnet into glass.</description>
+		<jobString>Making garnet glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Garnet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<GarnetGlass>4</GarnetGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Garnet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeGarnetGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Heliodor Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>HeliodorGlass</defName>
+		<label>heliodor glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(200,188,76)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>heliodor Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(200,188,76)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeHeliodorGlass</defName>
+		<label>make Heliodor Glass</label>
+		<description>Turn some heliodor into glass.</description>
+		<jobString>Making heliodor glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heliodor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<HeliodorGlass>4</HeliodorGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heliodor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeHeliodorGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Kunzite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>KunziteGlass</defName>
+		<label>kunzite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(203,132,202)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>kunzite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(203,132,202)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeKunziteGlass</defName>
+		<label>make Kunzite Glass</label>
+		<description>Turn some kunzite into glass.</description>
+		<jobString>Making kunzite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Kunzite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<KunziteGlass>4</KunziteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Kunzite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeKunziteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Larimar Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>LarimarGlass</defName>
+		<label>larimar glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(123,198,204)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>larimar Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(123,198,204)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeLarimarGlass</defName>
+		<label>make Larimar Glass</label>
+		<description>Turn some larimar into glass.</description>
+		<jobString>Making larimar glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Larimar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<LarimarGlass>4</LarimarGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Larimar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeLarimarGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Iolite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>IoliteGlass</defName>
+		<label>iolite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(88,77,145)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>iolite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(88,77,145)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeIoliteGlass</defName>
+		<label>make Iolite Glass</label>
+		<description>Turn some iolite into glass.</description>
+		<jobString>Making iolite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Iolite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<IoliteGlass>4</IoliteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Iolite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeIoliteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Malachite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MalachiteGlass</defName>
+		<label>malachite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(28,119,78)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>malachite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(28,119,78)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeMalachiteGlass</defName>
+		<label>make Malachite Glass</label>
+		<description>Turn some malachite into glass.</description>
+		<jobString>Making malachite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Malachite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<MalachiteGlass>4</MalachiteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Malachite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeMalachiteGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Marialite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MarialiteGlass</defName>
+		<label>marialite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(228,219,152)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>marialite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(228,219,152)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeMarialiteGlass</defName>
+		<label>make Marialite Glass</label>
+		<description>Turn some marialite into glass.</description>
+		<jobString>Making marialite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Marialite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<MarialiteGlass>4</MarialiteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Marialite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeMarialiteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Morganite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MorganiteGlass</defName>
+		<label>morganite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(193,155,154)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>morganite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(193,155,154)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeMorganiteGlass</defName>
+		<label>make Morganite Glass</label>
+		<description>Turn some morganite into glass.</description>
+		<jobString>Making morganite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Morganite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<MorganiteGlass>4</MorganiteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Morganite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeMorganiteGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Onyx Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>OnyxGlass</defName>
+		<label>onyx glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(40,40,40)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>onyx Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(40,40,40)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeOnyxGlass</defName>
+		<label>make Onyx Glass</label>
+		<description>Turn some onyx into glass.</description>
+		<jobString>Making onyx glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Onyx</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<OnyxGlass>4</OnyxGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Onyx</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeOnyxGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Padparadscha Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>PadparadschaGlass</defName>
+		<label>padparadscha glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(214,139,133)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>padparadshca Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(214,139,133)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakePadparadschaGlass</defName>
+		<label>make Padparadscha Glass</label>
+		<description>Turn some padparadscha into glass.</description>
+		<jobString>Making padparadscha glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Padparadscha</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<PadparadschaGlass>4</PadparadschaGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Padparadscha</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakePadparadschaGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Peridot Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>PeridotGlass</defName>
+		<label>peridot glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(160,190,60)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>peridot Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(160,190,60)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakePeridotGlass</defName>
+		<label>make Peridot Glass</label>
+		<description>Turn some peridot into glass.</description>
+		<jobString>Making peridot glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Peridot</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<PeridotGlass>4</PeridotGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Peridot</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakePeridotGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Prasiolite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>PrasioliteGlass</defName>
+		<label>prasiolite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(186,209,181)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>prasiolite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(186,209,181)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakePrasioliteGlass</defName>
+		<label>make Prasiolite Glass</label>
+		<description>Turn some prasiolite into glass.</description>
+		<jobString>Making prasiolite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prasiolite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<PrasioliteGlass>4</PrasioliteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prasiolite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakePrasioliteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Quartz Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>QuartzGlass</defName>
+		<label>quartz glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(230,230,230)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>quartz Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(230,230,230)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeQuartzGlass</defName>
+		<label>make Quartz Glass</label>
+		<description>Turn some quartz into glass.</description>
+		<jobString>Making quartz glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Quartz</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<QuartzGlass>4</QuartzGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Quartz</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeQuartzGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Rose Quartz Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>RoseQuartzGlass</defName>
+		<label>rose Quartz Glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(216,155,167)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>rose Quartz Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(216,155,167)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeRoseQuartzGlass</defName>
+		<label>make Rose Quartz Glass</label>
+		<description>Turn some rose quartz into glass.</description>
+		<jobString>Making rose quartz glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RoseQuartz</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RoseQuartzGlass>4</RoseQuartzGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RoseQuartz</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeRoseQuartzGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Ruby Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>RubyGlass</defName>
+		<label>ruby glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(169,46,42)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>ruby Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(169,46,42)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeRubyGlass</defName>
+		<label>make Ruby Glass</label>
+		<description>Turn some ruby into glass.</description>
+		<jobString>Making ruby glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ruby</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<RubyGlass>4</RubyGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ruby</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeRubyGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Sapphire Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SapphireGlass</defName>
+		<label>sapphire glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(37,85,170)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>sapphire Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(37,85,170)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeSapphireGlass</defName>
+		<label>make Sapphire Glass</label>
+		<description>Turn some sapphire into glass.</description>
+		<jobString>Making sapphire glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sapphire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<SapphireGlass>4</SapphireGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Sapphire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeSapphireGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Seraphinite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SeraphiniteGlass</defName>
+		<label>seraphinite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(78,110,92)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>seraphinite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(78,110,92)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeSeraphiniteGlass</defName>
+		<label>make Seraphinite Glass</label>
+		<description>Turn some seraphinite into glass.</description>
+		<jobString>Making seraphinite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Seraphinite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<SeraphiniteGlass>4</SeraphiniteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Seraphinite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeSeraphiniteGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Smokey Quartz Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SmokeyQuartzGlass</defName>
+		<label>smokey Quartz Glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(72,57,45)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>smokey Quartz Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(72,57,45)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeSmokeyQuartzGlass</defName>
+		<label>make Smokey Quartz Glass</label>
+		<description>Turn some smokey quartz into glass.</description>
+		<jobString>Making smokey quartz glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeyQuartz</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<SmokeyQuartzGlass>4</SmokeyQuartzGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeyQuartz</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeSmokeyQuartzGlass</li>
+	</value>
+    </match>
+	</Operation>
+	
+			--Sunstone Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>SunstoneGlass</defName>
+		<label>sunstone glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(229,86,43)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>sunstone Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(229,86,43)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeSunstoneGlass</defName>
+		<label>make Sunstone Glass</label>
+		<description>Turn some sunstone into glass.</description>
+		<jobString>Making sunstone glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Sunstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<SunstoneGlass>4</SunstoneGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Sunstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeSunstoneGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Tanzanite Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>TanzaniteGlass</defName>
+		<label>tanzanite glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(85,88,185)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>tanzanite Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(85,88,185)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeTanzaniteGlass</defName>
+		<label>make Tanzanite Glass</label>
+		<description>Turn some tanzanite into glass.</description>
+		<jobString>Making tanzanite glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tanzanite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<TanzaniteGlass>4</TanzaniteGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Tanzanite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeTanzaniteGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Jade Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>JadeGlass</defName>
+		<label>jade glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(85,118,69)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>jade Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(85,118,69)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeJadeGlass</defName>
+		<label>make Jade Glass</label>
+		<description>Turn some jade into glass.</description>
+		<jobString>Making jade glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Jade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<JadeGlass>4</JadeGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Jade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeJadeGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+			--Diamond Glass--
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+<value>
+	<ThingDef ParentName="ResourceBase">
+		<defName>DiamondGlass</defName>
+		<label>diamond glass</label>
+		<description>Transparent material that is quite popular despite being fragile.</description>
+		<graphicData>
+			<texPath>Things/Item/ReinforcedGlass</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(240,240,240)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>2.8</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stuffProps>
+			<stuffAdjective>diamond Glass</stuffAdjective>
+			<categories>
+				<li>GemGlass</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(240,240,240)</color>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<appearance>GlassGL</appearance>
+			<statFactors>
+				<MaxHitPoints>0.2</MaxHitPoints>
+				<Flammability>1</Flammability>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+	<RecipeDef>
+		<defName>MakeDiamondGlass</defName>
+		<label>make Diamond Glass</label>
+		<description>Turn some diamond into glass.</description>
+		<jobString>Making diamond glass.</jobString>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Diamond</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<DiamondGlass>4</DiamondGlass>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Diamond</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	</value>
+        </match>
+    </Operation>
+	
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Glass+Lights</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="GlassworkTable"]/recipes</xpath>
+	<value>
+			<li>MakeDiamondGlass</li>
+	</value>
+    </match>
+	</Operation>
+
+</Patch>
